@@ -1,0 +1,114 @@
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    position: relative;
+    &__btn {
+        cursor: pointer;
+        align-self: flex-start;
+        background-color: transparent;
+        border: none;
+        color: $maincolor;
+        margin-top: 13px;
+    }
+    &__btn:hover {
+        background-color: $bg-color;
+        border-radius: 8px;
+    }
+    &__btn--about {
+        color: #323264;
+    }
+    &__list {
+        list-style: none;
+        background-color: $maincolor;
+        border-radius: 12px 12px 0 0;
+        padding: 64px 15px 10px;
+        margin: 0;
+        position: absolute;
+        top: 45px;
+        display: none;
+    }
+    &__list-link {
+        display: block;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        color: $menu-color;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        margin: 7px 16px 15px 20px;
+        transition: border-bottom 0.2s linear;
+    }
+    &__list-link:not(.menu__list-link--active):hover {
+        background: $bg-color;
+        border-radius: 12px;
+    }
+    &__list-link--active {
+        color: $activecolor;
+        border-bottom: 2px solid $activecolor;
+    }
+}
+@media screen and(min-width:768px) {
+    .menu {
+        grid-column: 1/3;
+        justify-content: flex-start;
+        &__btn {
+            display: none;
+        }
+        &__list {
+            display: flex;
+            position: static;
+            background-color: transparent;
+            padding-top: 0;
+            padding-left: 0;
+        }
+        &__list-link {
+            font-size: 16px;
+            line-height: 20px;
+            text-align: right;
+            margin-left: 0;
+        }
+        &__list-link:not(.menu__list-link--active) {
+            color: $maincolor;
+        }
+        &__list-link--about:not(.menu__list-link--active) {
+            color: $menu-color;
+        }
+        &__list-link:not(.menu__list-link--active):hover {
+            border-bottom: 2px solid $maincolor;
+            background-color: transparent;
+            border-radius: 0;
+        }
+
+        &__list-link--about:not(.menu__list-link--active):hover {
+            border-bottom: 2px solid $menu-color;
+        }
+        &__list-link--no-active {
+            color: $maincolor;
+            border-bottom: 2px solid transparent;
+        }
+        &__list-link--no-active:hover {
+            border-bottom: 2px solid $maincolor;
+        }
+    }
+}
+@media screen and (min-width:992px) {
+    .menu {
+        padding-right: 30px;
+        grid-column: 2/3;
+        justify-self: end;
+        &__list {
+            padding-right: 0;
+        }
+        &__list-link {
+            margin-right: 0;
+            margin-left: 16px;
+        }
+    }
+}
+
+
+
+
+

@@ -1,0 +1,25 @@
+.quality {
+    padding-right: 43px;
+    padding-left: 15px;
+}
+@media screen and(min-width: 768px) {
+    .quality {
+        padding-left: 30px;
+        padding-right: 93px;
+    }
+}
+@media screen and(min-width: 992px) {
+    .quality {
+        display: flex;
+        padding: 0;
+        &__text {
+            width: 60%;
+            padding-right: 30px;
+        }
+        &__title {
+            width: 40%;
+            padding-left: 70px;
+            margin-top: 30px;
+        }
+    }
+}

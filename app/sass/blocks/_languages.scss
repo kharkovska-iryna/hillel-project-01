@@ -1,0 +1,28 @@
+.languages {
+    display: flex;
+    align-items: center;
+    &__unit {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        letter-spacing: 1px;
+        color: $maincolor;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 5px 7px;
+        border-radius: 8px;
+    }
+    &__unit--active {
+        background-color: $activecolor;
+    }
+    &__unit:not(.languages__unit--active):hover {
+        background-color: $hovercolor;
+    }
+    &__unit--about {
+        color: $menu-slider-color;
+    }
+    &__unit--about:not(.languages__unit--active):hover {
+        background-color: $bg-color-pages;
+    }
+}

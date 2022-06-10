@@ -1,0 +1,25 @@
+.phone {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: $maincolor;
+    align-self: end;
+    text-decoration: none;
+    margin: 13px 15px 13px auto;
+    transition-duration: 1s;
+    &:hover {
+        color: $hovercolor;
+    }
+    &--about {
+        color: $menu-slider-color;
+    }
+    &--about:hover {
+        color: $activecolor;
+    }
+}
+@media screen and(min-width: 768px) {
+    .phone {
+        margin:13px 0;
+    }
+}

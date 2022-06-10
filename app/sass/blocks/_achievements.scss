@@ -1,0 +1,45 @@
+.achievements {
+    padding: 92px 0 30px;
+    text-align: center;
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $text-color;
+    }
+    &__slider {
+        text-align: center;
+        &-item {
+            padding: 30px;
+        }
+        &-item--off {
+            display: none;
+        }
+    }
+}
+@media screen and(min-width:768px) {
+    .achievements {
+        &__slider {
+            display: flex;
+            &-item {
+                width: 25%;
+                padding-top: 45px;
+                padding-bottom: 8px;
+            }
+            &-item--off {
+                display: block;
+            }
+        }
+    }
+}
+@media screen and(min-width:992px) {
+    .achievements {
+        padding-top: 0;
+        &__slider-item {
+            padding-top: 55px;
+        }
+    }
+}

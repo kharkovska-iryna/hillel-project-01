@@ -1,0 +1,36 @@
+.dots {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    &__item {
+        padding: 0 7px;
+    }
+    &__btn {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: $menu-color;
+        opacity: 0.2;
+        &--active {
+            opacity: 1;
+        }
+        &:not(.dots__btn--active):hover {
+            opacity: 0.6;
+        }
+    }
+}
+@media screen and(min-width: 768px) {
+    .dots__btn--off {
+        display: none;
+    }
+    .dots {
+        margin-top: 43px;
+    }
+}
+@media screen and(min-width: 992px) {
+    .dots {
+        margin-top: 29px;
+    }
+}

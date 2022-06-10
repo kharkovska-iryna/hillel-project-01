@@ -1,0 +1,80 @@
+.partners-wrap {
+    &__item {
+        display: flex;
+        width: 100%;
+        height: 120px;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item-pic {
+        display: block;
+    }
+    &__item-none {
+        display: none;
+    }
+    &__item--blue {
+        background-color: #1C4280;
+    }
+    &__item--dark-blue {
+        background-color: #143646;
+    }
+    &__item--orange {
+        background-color: #F48B30;
+    }
+    &__item--violet {
+        background-color: #9E4DC3;
+    }
+    &__item--gray {
+        background-color: #E2E2E4;
+    }
+    &__item--red {
+        background-color: #C71C36;
+    }
+    &__item--light-blue {
+        background-color: #DCF3F9;
+    }
+    &__item--beige {
+        background-color: #EAEAEA;
+    }
+    &__item--dark-violet {
+        background-color: #282240;
+    }
+    &__item--turquoise {
+        background-color: #1D4568;
+    }
+    &__item--black {
+        background-color: #000000;
+    }
+}
+@media screen and(min-width:768px) {
+    .partners-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        &__item {
+            display: flex;
+            width: 33.333%;
+            height: 120px;
+            justify-content: center;
+            align-items: center;
+        }
+        &__item-none {
+            display: flex;
+        }
+    }
+}
+@media screen and(min-width:992px) {
+    .partners-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        &__item {
+            display: flex;
+            width: 25%;
+            height: 120px;
+            justify-content: center;
+            align-items: center;
+        }
+        &__item-none {
+            display: flex;
+        }
+    }
+}

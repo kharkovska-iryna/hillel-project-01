@@ -1,0 +1,89 @@
+.menu-slider {
+    display: block;
+    padding: 15px 15px 0;
+    &__list {
+        display: flex;
+        overflow: auto;
+        -moz-scrollbars: none;
+        -ms-overflow-style: none;
+        border-bottom: 4px solid rgba(255, 255, 255, 0.3);
+    }
+    &__list::-webkit-scrollbar {
+        width: 0;
+    }
+    &__btn {
+        white-space: nowrap;
+        font-family: 'Montserrat', 'Arial', sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        color: $menu-slider-color;
+        margin: 17px 30px 17px 0;
+        transition-duration: 1s;
+        &--active {
+            background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        &:not(.menu-slider__btn--active):hover {
+            text-shadow: 5px 5px 3px $menu-slider-shadow-color;
+        }
+    }
+    &__item {
+        display: block;
+        padding: 30px 0;
+    }
+    &__item-title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: $maincolor;
+        margin-bottom: 30px;
+    }
+    &__item-text {
+        font-size: 19px;
+        line-height: 30px;
+        color: $maincolor;
+    }
+}
+@media screen and(min-width: 768px) {
+    .menu-slider {
+        &__item {
+            padding: 60px 0;
+        }
+        &__item-title {
+            font-size: 30px;
+            line-height: 37px;
+        }
+        &__btn {
+            font-size: 38px;
+            line-height: 46px;
+            margin-bottom: 43px;
+        }
+    }
+}
+@media screen and(min-width: 992px) {
+    .menu-slider {
+        display: flex;
+        &__list {
+            width: 42%;
+            flex-direction: column;
+            align-items: flex-end;
+            padding-right: 29px;
+            border-bottom: none;
+            border-right: 4px solid rgba(255, 255, 255, 0.3);
+            margin: 0;
+        }
+        &__item {
+            width: 48%;
+            padding: 45px 0 45px 61px;
+        }
+        &__item-text {
+            font-size: 19px;
+            line-height: 30px;
+        }
+        &__btn {
+            margin-bottom: 14px;
+        }
+    }
+}

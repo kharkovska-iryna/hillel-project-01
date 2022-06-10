@@ -1,0 +1,22 @@
+.offers-item {
+    &__pic {
+        width: 92px;
+        height: 92px;
+        background-color: $maincolor;
+        border-radius: 24px;
+        padding: 14px;
+        margin: 30px 0;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 27px;
+        color:$menu-color;
+        margin-bottom: 15px;
+    }
+    &__text {
+        font-size: 16px;
+        line-height: 26px;
+        color: $maincolor;
+    }
+}

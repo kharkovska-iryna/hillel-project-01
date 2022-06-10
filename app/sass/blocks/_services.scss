@@ -1,0 +1,26 @@
+.services {
+    padding-right: 15px;
+    padding-bottom: 60px;
+}
+@media screen and(min-width: 768px) {
+    .services__offers {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, min-content);
+        padding-top: 30px;
+        column-gap: 60px;
+        row-gap: 30px;
+    }
+}
+@media screen and(min-width: 991px) {
+    .services {
+        padding-top: 60px;
+        padding-left: 0;
+    }
+    .services__offers {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 72px;
+    }
+}
+
